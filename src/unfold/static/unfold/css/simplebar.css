@@ -58,6 +58,13 @@
     -ms-overflow-style: none;
   }
 
+  .simplebar-content-wrapper a[class="block font-semibold mb-2 mt-4 text-font-important-light text-sm truncate dark:text-font-important-dark"] {
+
+    color: rgb(255, 231, 146); /* Cambia el color del texto a rojo */ 
+    font-size: medium;   
+  }
+
+
   .simplebar-content-wrapper::-webkit-scrollbar,
   .simplebar-hide-scrollbar::-webkit-scrollbar {
     display: none;

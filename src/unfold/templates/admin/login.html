@@ -25,10 +25,10 @@
 
 {% block base %}
     <div class="flex min-h-screen">
-        <div class="flex flex-grow items-center justify-center mx-auto px-4 relative">
+        <div class="flex flex-grow items-center justify-center mx-auto px-2 relative">
             <div class="w-full sm:w-96">
                 <h1 class="font-semibold mb-10">
-                    <span class="block text-font-important-light dark:text-font-important-dark">{% trans 'Welcome back to' %}</span>
+                    <span class="block text-font-important-light dark:text-font-important-dark">Bienvenido al</span>
                     <span class="block text-primary-600 text-xl dark:text-primary-500">{{ site_title }}</span>
                 </h1>
 
@@ -47,7 +47,7 @@
 
                 {% block login_before %}{% endblock %}
 
-                <form action="{{ app_path }}" method="post" id="login-form">
+                <form action="{{ app_path }}" method="post" id="login-form" autocomplete="off">
                     {% csrf_token %}
 
                     {% include "unfold/helpers/field.html" with field=form.username %}

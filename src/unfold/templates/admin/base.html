@@ -6,7 +6,9 @@
     <div id="page" class="flex min-h-screen">
         {% if not is_popup and is_nav_sidebar_enabled %}
             {% block nav-sidebar %}
-                {% include "admin/nav_sidebar.html" %}
+                <div class="text-white">
+                    {% include "admin/nav_sidebar.html" %}
+                </div>
             {% endblock %}
         {% endif %}
 

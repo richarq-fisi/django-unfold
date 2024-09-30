@@ -28,15 +28,7 @@
                         {% include 'unfold/helpers/breadcrumb_item.html' with link='' name=opts.verbose_name_plural|capfirst %}
                     {% endif %}
 
-                    {% if add %}
-                        {% blocktranslate trimmed with name=opts.verbose_name asvar breadcrumb_name %}
-                            Add {{ name }}
-                        {% endblocktranslate %}
-
-                        {% include 'unfold/helpers/breadcrumb_item.html' with link='' name=breadcrumb_name %}
-                    {% else %}
-                        {% include 'unfold/helpers/breadcrumb_item.html' with link='' name=original|truncatewords:'18' %}
-                    {% endif %}
+                    
                 </ul>
             </div>
         </div>
